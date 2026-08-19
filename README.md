@@ -1,9 +1,11 @@
 IR Module Testing System
+
 A Python-based testing and monitoring application for battery module electrical characterization, designed to acquire, validate, and record cell-level and module-level electrical measurements.
 
 The system communicates with a measurement device over a local network, evaluates measurements against configurable acceptance limits, and maintains test records for traceability and analysis.
 
 Overview
+
 The IR Module Testing System is developed to streamline the testing of battery modules by providing a structured workflow for measurement acquisition, validation, visualization, and result logging.
 
 The application supports:
@@ -19,24 +21,41 @@ Test result logging
 Application-level administrator access
 Configurable application themes and settings
 Local network communication with measurement equipment
+
 Key Features
+
 🔋 Electrical Measurement
+
 The system supports measurement points including:
 
 B-
+
 B1
+
 B2
+
 B3
+
 B4
+
 B5
+
 B6
+
 B7
+
 B8
+
 B9
+
 B10
+
 B11
+
 B12
+
 B13
+
 Module
 
 Measurements include:
@@ -45,20 +64,28 @@ Cell Voltage
 Cell Internal Resistance
 Module Voltage
 Module Internal Resistance
+
 📊 Automated Validation
+
 Measured values are compared against configurable minimum and maximum limits.
 
 Example:
 
 Measurement	Minimum	Maximum
-Cell Voltage	3.565 V	3.580 V
-Cell IR	1.50 mΩ	1.98 mΩ
-Module Voltage	49.91 V	50.12 V
-Module IR	18.0 mΩ	19.9 mΩ
+
+Cell Voltage	 3.565 V	 3.580 V
+
+Cell IR 	1.50 mΩ	 1.98 mΩ
+
+Module Voltage	 49.91 V	50.12 V
+
+Module IR	 18.0 mΩ	19.9 mΩ
+
 
 The limits can be modified according to the required battery/module specifications.
 
 🖥️ Application Interface
+
 The application provides a graphical interface for:
 
 User login
@@ -68,7 +95,9 @@ Result visualization
 Configuration management
 Theme management
 Test result review
+
 📁 Test Data Logging
+
 Test results are recorded for traceability and future analysis.
 
 The application can generate and maintain an Excel-based test log:
@@ -108,6 +137,7 @@ The application is organized into modules responsible for different aspects of t
        └─────────────────┘
 
 Project Structure
+
 IR_Module/
 │
 ├── main.py
@@ -177,7 +207,7 @@ Example:
     "ip": "192.168.1.1",
     "read_command": "READ?\n",
     "points": [
-       "B-",
+        "B-",
         "B1",
         "B2",
         "B3",
@@ -212,10 +242,15 @@ Requirements
 The application requires:
 
 Python 3.x
+
 Compatible measurement hardware
+
 Network connectivity to the measurement device
+
 Required Python dependencies
+
 Windows environment recommended for the current application setup
+
 Install project dependencies, if a requirements.txt file is provided:
 
 pip install -r requirements.txt
@@ -243,6 +278,7 @@ python main.py
 The application will initialize the user interface and required testing components.
 
 Typical Test Workflow
+
 1. Start Application
        ↓
 2. User Authentication
@@ -278,19 +314,31 @@ Troubleshooting
 Measurement analysis
 Test traceability
 Development Goals
+
 Future development may include:
 
 Automated test sequencing
+
 Improved measurement-device integration
+
 Enhanced data visualization
+
 Test report generation
+
 Production database integration
+
 User role management
+
 Advanced test history and filtering
+
 Additional measurement instrument support
+
 Automated diagnostics
+
 Production-line integration
+
 Project Status
+
 Status: Active Development
 
 The project is being developed as a dedicated battery module testing solution and may undergo changes as new testing requirements and hardware integrations are introduced.
@@ -299,3 +347,4 @@ Author
 MechaMorph27
 
 Project: IR Module Testing System
+
