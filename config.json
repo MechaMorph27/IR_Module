@@ -1,0 +1,33 @@
+{
+    "ip": "192.168.1.1",
+    "read_command": "READ?\n",
+    "admin_password": "Matter@123",
+    "points": [
+        "B-",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9",
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "Module"
+    ],
+    "limits": {
+        "cell_v_min": 3.565,
+        "cell_v_max": 3.58,
+        "cell_ir_min": 1.5,
+        "cell_ir_max": 1.98,
+        "module_v_min": 49.91,
+        "module_v_max": 50.12,
+        "module_ir_min": 18.0,
+        "module_ir_max": 19.9
+    },
+    "excel_file": "Module_Test_Log.xlsx"
+}
